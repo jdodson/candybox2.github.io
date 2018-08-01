@@ -2,7 +2,7 @@
  *
  * @source: http://candybox2.github.io/candybox2_uncompressed.js
  *
- * @licstart  The following is the entire license notice for the 
+ * @licstart  The following is the entire license notice for the
  *  JavaScript code in this page.
  *
  * Copyright (C) 2012 David "aniwey" L.
@@ -135,7 +135,7 @@ var ATreeTicTacToeStep;
     ATreeTicTacToeStep[ATreeTicTacToeStep["NOBODY_WINS"] = 1] = "NOBODY_WINS";
     ATreeTicTacToeStep[ATreeTicTacToeStep["YOU_LOSE"] = 2] = "YOU_LOSE";
 })(ATreeTicTacToeStep || (ATreeTicTacToeStep = {}));
-// N.B. : the case when the player wins isn't in this enumeration because this case is a new aTreeStep and is therefore handled by the global saving system 
+// N.B. : the case when the player wins isn't in this enumeration because this case is a new aTreeStep and is therefore handled by the global saving system
 var Place = (function () {
     // Constructor
     function Place(game) {
@@ -194,45 +194,45 @@ var Saving;
                 // You can uncomment the lines below to start your game with everything unlocked (useful for testing purposes)
                 /*
                 Saving.saveNumber("aTreeStep", 2);
-                
+
                 Saving.saveBool("mainMapDoneDesert", true);
                 Saving.saveBool("mainMapDoneBridge", true);
                 Saving.saveBool("mainMapDoneCaveEntrance", true);
                 Saving.saveBool("mainMapDonePier", true);
                 Saving.saveBool("mainMapDoneForest", true);
                 Saving.saveBool("mainMapDoneCastleEntrance", true);
-                
+
                 Saving.saveBool("gridItemPossessedMainMap", true);
                 Saving.saveBool("gridItemPossessedTimeRing", true);
                 Saving.saveBool("gridItemPossessedThirdHouseKey", true);
                 Saving.saveBool("gridItemPossessedBeginnersGrimoire", true);
-                
+
                 Saving.saveBool("gridItemPossessedFeather", true);
                 Saving.saveBool("gridItemPossessedPogoStick", true);
                 Saving.saveBool("gridItemPossessedHeartPlug", true);
                 Saving.saveBool("gridItemPossessedAdvancedGrimoire", true);
-                
+
                 Saving.saveBool("gridItemPossessedSponge", true);
                 Saving.saveBool("gridItemPossessedShellPowder", true);
                 Saving.saveBool("gridItemPossessedHeartPendant", true);
                 Saving.saveBool("gridItemPossessedBlackMagicGrimoire", true);
-                
+
                 Saving.saveBool("gridItemPossessedFortressKey", true);
                 Saving.saveBool("gridItemPossessedUnicornHorn", true);
                 Saving.saveBool("gridItemPossessedXinopherydonClaw", true);
                 Saving.saveBool("gridItemPossessedPitchfork", true);
-                
+
                 Saving.saveBool("gridItemPossessedRedSharkFin", true);
                 Saving.saveBool("gridItemPossessedGreenSharkFin", true);
                 Saving.saveBool("gridItemPossessedPurpleSharkFin", true);
-                
+
                 Saving.saveBool("gridItemPossessedTalkingCandy", true);
-                
+
                 Saving.saveBool("gridItemPossessedP", true);
                 Saving.saveBool("gridItemPossessedL", true);
                 Saving.saveBool("gridItemPossessedA", true);
                 Saving.saveBool("gridItemPossessedY", true);
-                
+
                 Saving.saveBool("eqItemGlovesRedEnchantedGloves", true);
                 Saving.saveBool("eqItemGlovesPinkEnchantedGloves", true);
                 //Saving.saveBool("eqItemWeaponWoodenSword", true);
@@ -242,20 +242,20 @@ var Saving;
                 Saving.saveBool("eqItemWeaponMonkeyWizardStaff", true);
                 Saving.saveBool("eqItemWeaponGiantSpoon", true);
                 Saving.saveBool("eqItemHatOctopusKingCrown", true);
-                
+
                 Saving.saveBool("eqItemBootsBootsOfIntrospection", true);
-                
+
                 Saving.saveBool("eqItemBootsRocketBoots", true);
-                
+
                 Saving.saveBool("eqItemWeaponGiantSpoonOfDoom", true);
-                
+
                 Saving.saveBool("eqItemBodyArmoursEnchantedKnightBodyArmour", true);
-                
+
                 Saving.saveNumber("gameCandiesEatenCurrent", 500000000);
                 Saving.saveNumber("gameCandiesEatenMax", 500000000);
-                
+
                 Saving.saveNumber("playerHp", 1000);
-                
+
                 Saving.saveBool("questPlayerSpellHealthPotionHasSpell", true);
                 Saving.saveBool("questPlayerSpellTurtlePotionHasSpell", true);
                 Saving.saveBool("questPlayerSpellAntiGravityPotionHasSpell", true);
@@ -263,7 +263,7 @@ var Saving;
                 Saving.saveBool("questPlayerSpellCloningPotionHasSpell", true);
                 Saving.saveBool("questPlayerSpellPPotionHasSpell", true);
                 Saving.saveBool("questPlayerSpellXPotionHasSpell", true);
-                
+
                 Saving.saveNumber("questPlayerSpellHealthPotionQuantity", 0);
                 Saving.saveNumber("questPlayerSpellTurtlePotionQuantity", 64084);
                 Saving.saveNumber("questPlayerSpellAntiGravityPotionQuantity", 47542);
@@ -271,25 +271,25 @@ var Saving;
                 Saving.saveNumber("questPlayerSpellCloningPotionQuantity", 10050);
                 Saving.saveNumber("questPlayerSpellPPotionQuantity", 10085250);
                 Saving.saveNumber("questPlayerSpellXPotionQuantity", 10050999);
-                
+
                 //Saving.saveBool("gameDebug", true);
-                
+
                 Saving.saveNumber("gameCandiesCurrent", 5000000);
                 Saving.saveNumber("gameCandiesMax", 5000000);
-                
+
                 Saving.saveNumber("gameLollipopsCurrent", 5000000000);
                 Saving.saveNumber("gameLollipopsMax", 500000000000);
-                
+
                 Saving.saveNumber("gameChocolateBarsCurrent", 7);
                 Saving.saveNumber("gameChocolateBarsMax", 7);
-                
+
                 Saving.saveNumber("gamePainsAuChocolatCurrent", 7);
                 Saving.saveNumber("gamePainsAuChocolatMax", 7);
-                
+
                 Saving.saveBool("lonelyHouseTakeTheBoxDone", true);
-                
+
                 Saving.saveNumber("lollipopFarmPondHowManyLolligators", 0);
-                
+
                 Saving.saveBool("statusBarUnlocked", true);
                 Saving.saveBool("statusBarUnlockedCfg", true);
                 Saving.saveBool("statusBarUnlockedSave", true);
@@ -301,14 +301,14 @@ var Saving;
                 Saving.saveBool("statusBarUnlockedInsideYourBox", true);
                 Saving.saveBool("statusBarUnlockedTheComputer", true);
                 Saving.saveBool("statusBarUnlockedTheArena", true);
-                
+
                 Saving.saveBool("castleKilledNougatMonster", true);
-                
+
                 Saving.saveBool("dragonDone", true);
                 Saving.saveBool("dragonUnlockedCyclops", true);
-                
+
                 Saving.saveBool("castleTowerFirstVisitDone", true);
-                
+
                 Saving.saveString("gameLanguage", "fr");
                 */
                 break;
@@ -2752,7 +2752,7 @@ var EqItem = (function (_super) {
     function EqItem() {
         _super.apply(this, arguments);
     }
-    // Public methods    
+    // Public methods
     EqItem.prototype.update = function (player, quest) {
     };
     // Public getters
@@ -3673,7 +3673,7 @@ var Bugs;
         return ultimateBugLevel;
     }
     Bugs.getUltimateBugLevel = getUltimateBugLevel;
-    // Setters    
+    // Setters
     function setGraphicalBugLevel(graphicalBugLevel_) {
         graphicalBugLevel = graphicalBugLevel_;
     }
@@ -5345,7 +5345,7 @@ var Castle = (function (_super) {
     Castle.prototype.getRenderArea = function () {
         return this.renderArea;
     };
-    // Private methods   
+    // Private methods
     Castle.prototype.drawBigRoom = function (x, y) {
         // Buttons
         this.renderArea.addMultipleAsciiButtons("castleBigRoomButton", x, x + 1, y, x, x + 1, y + 1);
@@ -9202,7 +9202,7 @@ var RenderLocation = (function () {
         // Finally change the "left" value of our div
         $(this.locationString).css({ "left": ((gap / 2) * ex + addGap).toString() + "px" });
     };
-    // Public setters    
+    // Public setters
     RenderLocation.prototype.setLocationString = function (locationString) {
         this.locationString = locationString;
     };
@@ -12482,7 +12482,7 @@ var Main;
     var loadingString = null;
     // Information about the game mode
     var gameMode = null;
-    // Public functions    
+    // Public functions
     function documentIsReady() {
         Keyboard.execute(); // Execute the Kayboard jquery stuff
         start(); // Start the game
@@ -13248,7 +13248,7 @@ var OutsideTheHole = (function (_super) {
     OutsideTheHole.prototype.getRenderArea = function () {
         return this.renderArea;
     };
-    // Private methods 
+    // Private methods
     OutsideTheHole.prototype.jump = function () {
         this.getGame().setPlace(new TheHole(this.getGame()));
     };
@@ -14639,7 +14639,7 @@ var QuestItemFound = (function () {
     QuestItemFound.prototype.get = function () {
         this.quest.getGame().getQuestLog().addMessage(new QuestLogMessage(this.getText, null, true));
     };
-    // Public getters    
+    // Public getters
     QuestItemFound.prototype.getSavingName = function () {
         return this.savingName;
     };
@@ -15327,7 +15327,7 @@ var Save = (function (_super) {
                 yAdd += 1;
             // The links
             for (var i = 1; i <= 5; i++) {
-                link = "http://candybox2.github.io/?slot=" + i.toString();
+                link = "https://jdodson.github.io/candybox2.github.io/?slot=" + i.toString();
                 this.renderArea.addHtmlLink(x + 2, y + yAdd + 3 + i, link, link);
                 this.renderArea.drawString("(slot " + i.toString() + ")", x + link.length + 4, y + yAdd + 3 + i);
             }
@@ -18827,7 +18827,7 @@ var TheSeaPattern_Boss0_Shapes = (function (_super) {
         // Set the shape type
         this.shapeType = Random.upTo(2);
     }
-    // Public methods    
+    // Public methods
     TheSeaPattern_Boss0_Shapes.prototype.isPatternDone = function () {
         if (this.getTheSea().getDistance() > this.getInitialDistance() + 50)
             return true;
@@ -19539,7 +19539,7 @@ var TheSea = (function (_super) {
     TheSea.prototype.getRightLimit = function () {
         return 70;
     };
-    // Private methods    
+    // Private methods
     TheSea.prototype.addFloor = function (index, type, height, previousFloor) {
         if (previousFloor === void 0) { previousFloor = null; }
         // Add the floor
@@ -20125,7 +20125,7 @@ var Village = (function (_super) {
         // Update
         this.update();
     }
-    // Public methods    
+    // Public methods
     Village.prototype.willBeDisplayed = function () {
         this.getGame().getOneSecondCallbackCollection().addCallback(this.actionSmokes.bind(this));
         this.update(); // We update. This is needed because the village is the first thing to be loaded when we launch the game
@@ -30819,7 +30819,7 @@ function HardcorePlatformer_getNewQuest(game) {
 }
 TheArenaModule.addQuest(new TheArenaModuleQuest("hardcorePlatformer", HardcorePlatformer_getNewQuest.bind(this)));
 // -------------------------------------------------------------------------------
-// We create our HardcorePlatformer_Quest class, which herits from the Quest class 
+// We create our HardcorePlatformer_Quest class, which herits from the Quest class
 // -------------------------------------------------------------------------------
 var HardcorePlatformer_Quest = (function (_super) {
     __extends(HardcorePlatformer_Quest, _super);
@@ -30962,7 +30962,7 @@ function PeacefulForest_getNewQuest(game) {
 }
 TheArenaModule.addQuest(new TheArenaModuleQuest("peacefulForest", PeacefulForest_getNewQuest.bind(this)));
 // ---------------------------------------------------------------------------
-// We create our PeacefulForest_Quest class, which herits from the Quest class 
+// We create our PeacefulForest_Quest class, which herits from the Quest class
 // ---------------------------------------------------------------------------
 var PeacefulForest_Quest = (function (_super) {
     __extends(PeacefulForest_Quest, _super);
